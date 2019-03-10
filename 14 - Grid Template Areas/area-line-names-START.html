@@ -46,6 +46,31 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-areas: 
+      "one one one one two two two two"
+      "one one one one two two two two"
+      "one one one one two two two two"
+      "one one one one two two two two";
+    }
+
+    .item1 {
+      grid-area: one;
+    }
+
+    .item2 {
+      grid-area: two;
+    }
+
+    .item3 {
+      grid-column: one-start / one-end;
+    }
+
+    .item4 {
+      grid-column: two-start / two-end;
+    }
+
+    .item5 {
+      grid-column: one-start / two-end;
     }
   </style>
 </body>
